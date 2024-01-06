@@ -29,6 +29,7 @@ export default function App() {
     <main className="font-inter">
       { isClicked && <Sidebar onMenuClickHandler={onMenuClickHandler} /> }
       <Navbar onMenuClickHandler={onMenuClickHandler} />
+      <HeroSection />
     </main>
   )
 }
