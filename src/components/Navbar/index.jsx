@@ -1,10 +1,11 @@
-// import { MdMenu } from "react-icons/md"
 import { IoMenuOutline } from "react-icons/io5"
 
 import { Navlinks } from ".."
 
 
-export default function index() {
+export default function index(props) {
+
+
   return (
     <nav className="w-full py-3">
       <section className="w-[90%] md:w-[88%] mx-auto flex flex-row items-center
@@ -13,6 +14,7 @@ export default function index() {
           Dev<span className="text-[#09e85e] font-bold">Folio</span>
         </h1>
         <IoMenuOutline
+          onClick={props.onMenuClickHandler}
           className="text-[#09e85e] lg:hidden"
           fontSize={40}
        />
