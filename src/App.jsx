@@ -4,7 +4,7 @@ import "aos/dist/aos.css"
 
 import {
   Navbar, HeroSection,
-  Sidebar
+  Sidebar, Technology
 } from "./components"
 
 
@@ -30,6 +30,7 @@ export default function App() {
       { isClicked && <Sidebar onMenuClickHandler={onMenuClickHandler} /> }
       <Navbar onMenuClickHandler={onMenuClickHandler} />
       <HeroSection />
+      <Technology />
     </main>
   )
 }
