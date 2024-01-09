@@ -1,4 +1,5 @@
 
+import { ProjectCard } from ".."
 
 export default function index() {
   return (
@@ -11,6 +12,11 @@ export default function index() {
       font-light mt-5">
        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
+
+      <div className="border border-red-500 mt-14">
+        <ProjectCard />
+      </div>
+    
     </section>
   )
 }
