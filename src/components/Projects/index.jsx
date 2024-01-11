@@ -1,5 +1,6 @@
 
 import { ProjectCard } from ".."
+import { projectInfo } from "./project-data"
 
 export default function index() {
   return (
@@ -13,8 +14,9 @@ export default function index() {
        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
 
-      <div className="border border-red-500 mt-14">
-        <ProjectCard />
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2
+        lg:grid-cols-3 lg:gap-x-8 md:gap-x-5 gap-y-8">
+        {projectInfo.map(item => <ProjectCard item={item} />)}
       </div>
     
     </section>
