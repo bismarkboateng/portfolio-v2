@@ -34,7 +34,7 @@ export default function App() {
       <Technology />
       <Projects />
       <Articles />
-      {/* <FAQ /> */}
+      <FAQ />
     </main>
   )
 }

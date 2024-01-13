@@ -9,7 +9,7 @@ export default function index(props) {
   leading-6 font-light cursor-pointer`
 
   return createPortal(
-    <section className="absolute z-[1000] top-0 right-0
+    <section className="fixed z-[1000] top-0 right-0
       w-[84%] md:w-[50%] h-[100vh] from-slate-800
       bg-[#1b1b1b]"
       data-aos="fade-right" data-aos-duration="400"
