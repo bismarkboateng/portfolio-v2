@@ -5,7 +5,7 @@ import "aos/dist/aos.css"
 import {
   Navbar, HeroSection,
   Sidebar, Technology,
-  Projects
+  Projects, FAQ, Articles
 } from "./components"
 
 
@@ -33,6 +33,8 @@ export default function App() {
       <HeroSection />
       <Technology />
       <Projects />
+      <Articles />
+      {/* <FAQ /> */}
     </main>
   )
 }
