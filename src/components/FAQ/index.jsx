@@ -48,7 +48,7 @@ export default function index() {
 
       <section>
 
-       <div className="border-b border-green-600 pb-4 cursor-pointer">
+       <div className="border-b border-green-600 pb-4 cursor-pointer" data-aos="fade-up">
         <div className="flex flex-row items-center justify-between mt-3"
           onClick={() => onClickHandler("stack")}>
           <p className="text-base md:text-2xl text-[#fefdfb] font-light leading-6">
@@ -67,7 +67,7 @@ export default function index() {
         )}
        </div>
 
-       <div className="mt-5 border-b border-green-600 pb-4 cursor-pointer">
+       <div className="mt-5 border-b border-green-600 pb-4 cursor-pointer" data-aos="fade-up">
         <div className="flex flex-row items-center justify-between mt-3"
           onClick={() => onClickHandler("availability")}>
           <p className="text-base md:text-2xl text-[#fefdfb] font-light leading-6">
@@ -83,7 +83,7 @@ export default function index() {
         )}
        </div>
 
-       <div className="mt-5 cursor-pointer">
+       <div className="mt-5 cursor-pointer" data-aos="fade-up">
         <div className="flex flex-row items-center justify-between mt-3"
           onClick={() => onClickHandler("team")}>
           <p className="text-base md:text-2xl text-[#fefdfb] font-light leading-6">

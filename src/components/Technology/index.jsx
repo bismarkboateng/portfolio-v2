@@ -24,8 +24,7 @@ export default function index() {
         </h2>
         <p className="text-[#7a878d] font-light text-base md:text-lg
         leading-[22.4px] mt-8 2xl:w-[70%]">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-         Suspendisse varius enim in eros elementum tristique. 
+          I work with these technologies on a daily basis and have over 1.5 years of expertise with them.
         </p>
       </section>
 

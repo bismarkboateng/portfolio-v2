@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 import { MdOutlineMail } from "react-icons/md"
 import { IoCallOutline } from "react-icons/io5"
@@ -5,6 +6,25 @@ import { FaTwitter } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
 
 export default function index() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  })
+
+  const phone = "+233553597847"
+  const emailAddress = "bismarkb609@gmail.com"
+  const IconMailailToLink = `mailto:${emailAddress}`
+  const callPhone = `tel:${phone}`
+  const mailToLink = `mailto:${emailAddress}?subject=${encodeURIComponent(formData.name)}&
+    body=${encodeURIComponent(formData.message)}`
+
+
+  const onFieldChangeHandler = (event) => {
+    const { name, value } = event.target
+    setFormData(prevData => ({...prevData, [name]: value }))
+  }
+
 
   return (
     <footer className="w-[90%] md:w-[92%] 2xl:w-[75%] mx-auto mt-24">
@@ -21,11 +41,26 @@ export default function index() {
             the form.
           </p>
           <div className="flex flex-row items-center gap-2 mt-7">
-            <i><MdOutlineMail fontSize={30} className="text-[#7a878d]" /></i>
+
+            <i>
+              <a href={IconMailailToLink}>
+                <MdOutlineMail
+                  fontSize={30}
+                  className="text-[#7a878d]"
+                />
+              </a>
+            </i>
             <p>bismarkb609@gmail.com</p>
           </div>
           <div className="flex flex-row items-center gap-2 mt-7">
-            <i><IoCallOutline fontSize={30} className="text-[#7a878d]" /></i>
+            <i>
+              <a href={callPhone}>
+                <IoCallOutline
+                  fontSize={30}
+                  className="text-[#7a878d]"
+                />
+              </a>
+            </i>
             <p>+233553597847</p>
           </div>
         </div>
@@ -37,6 +72,9 @@ export default function index() {
               <input
                 className="bg-black outline-none border border-green-600
                 py-2 pl-2"
+                value={formData.name}
+                onChange={onFieldChangeHandler}
+                name="name"
               />
             </div>
 
@@ -45,23 +83,30 @@ export default function index() {
               <input
                 className="bg-black outline-none border border-green-600
                 py-2 pl-2"
+                value={formData.email}
+                onChange={onFieldChangeHandler}
+                name="email"
               />
             </div>
 
             <div className="mb-1">
               <label>Message</label>
               <textarea
-              rows={8}
-              cols={50}
-              className="w-full bg-black outline-none border border-green-600
-              pl-2"
+                rows={8}
+                cols={50}
+                className="w-full bg-black outline-none border border-green-600
+                pl-2"
+                value={formData.message}
+                onChange={onFieldChangeHandler}
+                name="message"
               />
             </div>
 
-            <button className="bg-[#fefdfb] text-[#000] font-medium rounded-md
-            w-[40%] 2xl:w-[20%] px-4 py-2 cursor-pointer outline-none">
+            <a className="bg-[#fefdfb] text-[#000] font-medium rounded-md
+            w-[40%] max-w-max py-2 px-2 md:px-3 2xl:w-[20%] cursor-pointer outline-none"
+            href={mailToLink}>
               Submit
-            </button>
+            </a>
           </form>
         </div>
       </section>

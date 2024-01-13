@@ -2,7 +2,7 @@
 export default function index({ article }) {
 
   return (
-    <section className="border border-green-300">
+    <section className="border border-green-300" data-aos="fade-right">
      <div className="w-full h-[250px]">
       <img
         src={article?.image}

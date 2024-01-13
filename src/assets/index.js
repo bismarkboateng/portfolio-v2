@@ -8,3 +8,7 @@ export { default as Clinicx } from "./images/clinicx.png"
 export { default as Digital } from "./images/digital-solution.png"
 export { default as Async } from "./images/asynchronous.png"
 export { default as Hooks } from "./images/react-hooks.png"
+
+
+// resume 
+export { default as Resume } from "./resume.pdf"

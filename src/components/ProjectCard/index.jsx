@@ -3,7 +3,7 @@ import { Tag } from ".."
 
 export default function index({ item }) {
   return (
-    <section className="border border-green-400 pb-1">
+    <section className="border border-green-400 pb-1" data-aos="fade-up">
      <div className="w-full h-[252px]">
       <img
         src={item.image}
@@ -20,7 +20,7 @@ export default function index({ item }) {
         {item.description}
       </p>
       <div className="flex flex-row items-center gap-2 mb-3">
-        {item.tech.map(index => <Tag>{index}</Tag>)}
+        {item.tech.map(index => <Tag key={index}>{index}</Tag>)}
       </div>
 
       <div>
