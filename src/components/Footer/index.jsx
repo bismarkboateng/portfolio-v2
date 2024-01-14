@@ -40,29 +40,24 @@ export default function index() {
             Drop me a line, give me a call, or send me a message by submitting
             the form.
           </p>
-          <div className="flex flex-row items-center gap-2 mt-7">
-
+          <a href={IconMailailToLink} className="flex flex-row items-center gap-2 mt-7">
             <i>
-              <a href={IconMailailToLink}>
-                <MdOutlineMail
-                  fontSize={30}
-                  className="text-[#7a878d]"
-                />
-              </a>
+              <MdOutlineMail
+                fontSize={30}
+                className="text-[#7a878d]"
+              />
             </i>
             <p>bismarkb609@gmail.com</p>
-          </div>
-          <div className="flex flex-row items-center gap-2 mt-7">
+          </a>
+          <a href={callPhone} className="flex flex-row items-center gap-2 mt-7">
             <i>
-              <a href={callPhone}>
-                <IoCallOutline
-                  fontSize={30}
-                  className="text-[#7a878d]"
-                />
-              </a>
+              <IoCallOutline
+                fontSize={30}
+                className="text-[#7a878d]"
+              />
             </i>
             <p>+233553597847</p>
-          </div>
+          </a>
         </div>
 
         <div className="2xl:w-[50%]">
